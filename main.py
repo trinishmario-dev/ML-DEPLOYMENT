@@ -40,7 +40,7 @@ st.title("🥤 Modern Beverage Sales Prediction Dashboard")
 st.markdown("### Explore interactive visualizations and predict sales using a machine learning model!")
 
 # 📂 Load data
-df = pd.read_csv("/workspaces/ML-DEPLOYMENT/synthetic_beverage_sales_data.csv", low_memory=False)
+df = pd.read_csv("data/synthetic_beverage_sales_data.csv", low_memory=False)
 df['Order_Date'] = pd.to_datetime(df['Order_Date'], errors='coerce')
 
 # 🔍 Sidebar filters
